@@ -52,4 +52,4 @@ subject <- rbind(subTest, subTrain)
 averages <- aggregate(xData, by = list(activity = yData[,1], subject = subject[,1]), mean)
 
 #5.1 Create a text file called "UCI-HAR.txt" and write the data in "averages" to it.
-write.csv(averages, file=paste(dataPath, "/UCI-HAR.txt",sep="/"), row.names=FALSE)
+write.csv(averages, file=paste(dataPath, "/UCI-HAR.csv",sep="/"), row.names=FALSE)
